@@ -1,0 +1,59 @@
+@keyframes pie-jump {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px) rotate(3deg);
+    }
+}
+@keyframes pie-tilt {
+    0% {
+        transform: rotate(20deg);
+    }
+    25% {
+        transform: rotate(16deg);
+    }
+    75% {
+        transform: rotate(24deg);
+    }
+}
+@keyframes girl {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.content-intro__subtitle {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 0;
+    transform: rotate(-10deg);
+}
+.content-intro__ridinghood {
+    position: relative;
+    margin-bottom: 0;
+    margin-top: -10px;
+    transform: translate(-160px, 0) rotate(5deg);
+}
+.content-intro__pies {
+    position: relative;
+    margin-bottom: 0;
+    margin-top: -20px;
+    transform: translate(140px, 0)  rotate(5deg);
+}
+.content-intro__girl {
+    position: relative;
+    animation: girl 3s infinite;
+}
+.content-intro__pie-1 {
+    position: relative;
+    animation: pie-jump 2s infinite;
+}
+.content-intro__pie-2 {
+    transform: rotate(20deg);
+    position: relative;
+    animation: pie-tilt 1.5s infinite;
+}

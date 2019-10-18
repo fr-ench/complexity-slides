@@ -1,0 +1,76 @@
+@keyframes che-jump {
+    0% {
+        transform: translate(0, 0);
+    }
+    29% {
+        mix-blend-mode: normal;
+        filter: none;
+    }
+    30% {
+        mix-blend-mode: difference;
+        filter: saturate(1000%) hue-rotate(185deg);
+    }
+    50% {
+        transform: translate(0, -12px);
+    }
+    61% {
+        mix-blend-mode: difference;
+        filter: saturate(1000%) hue-rotate(185deg);
+    }
+    62% {
+        mix-blend-mode: normal;
+        filter: none;
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes wolf-in-pants {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes box {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    30% {
+        transform: rotate(-3deg);
+    }
+    60% {
+        transform: rotate(3deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.content-multiparts__eaten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content-multiparts__eaten-wolf {
+  max-width: 380px;
+  animation: wolf-in-pants 5s infinite ease-in-out;
+}
+.content-multiparts__eaten-pie {
+  max-width: 80px;
+  animation: che-jump 5s infinite ease-in-out;
+}
+.content-multiparts__cap {
+  max-width: 200px;
+}
+
+.content-multiparts__box {
+    position: relative;
+    will-change: transform;
+    animation: box 3s infinite ease-in;
+}

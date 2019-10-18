@@ -1,0 +1,32 @@
+@keyframes half-pie {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.content-risk__problem-img {
+  height: 20vh;
+}
+
+.content-risk__half-pie {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 30vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-28%, 32%) rotate(28deg);
+}
+
+.content-risk__half-pie-img {
+  height: 100%;
+  position: relative;
+  animation: half-pie infinite 1.0s ease-out;
+}

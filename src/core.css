@@ -1,0 +1,22 @@
+:root {
+  --yellow: #ffe385;
+  --black: #272727;
+  --white: #ffffff;
+  --gradientLeft: #00c4ff;
+  --gradientRight: #6d47d9;
+  --blue: #0040a5;
+  --magenta: #f9198a;
+}
+
+body {
+  background: url("./assets/watercolor.jpg");
+  background-color: var(--white);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

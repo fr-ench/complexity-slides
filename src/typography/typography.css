@@ -1,0 +1,120 @@
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color: var(--blue);
+  line-height: 1.8em;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+h1, .title--xxl {
+  font-size: 3.5rem;
+  line-height: 1.2em;
+  margin: 0;
+  align-self: center;
+  font-weight: 400;
+}
+
+h2, .title--xl {
+  font-size: 2.7rem;
+  line-height: 1.1em;
+  margin: 0;
+  align-self: center;
+  font-weight: 400;
+}
+
+h3, .title--l {
+  font-size: 2.5rem;
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+}
+
+h4, .title--m {
+  font-size: 2.0rem;
+  margin: 0 0 0.75em 0;
+  font-weight: 400;
+}
+
+h5, .title--s {
+  margin: 0 0 0.25em 0;
+  font-weight: 400;
+  font-size: 1.8rem
+}
+
+h6, .title--xs {
+  font-weight: 400;
+  margin: 0 0 0.25em 0;
+  font-size: 1.7rem
+}
+
+.title:last-child {
+  margin-bottom: 0;
+}
+
+.title--iconed {
+  display: flex;
+  align-items: center;
+}
+
+.title--centered {
+  justify-content: center;
+  text-align: center;
+}
+
+.title__icon {
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  &:fist-child {
+    margin-left: 0;
+  }
+  &:lst-child {
+    margin-right: 0;
+  }
+}
+
+p {
+  margin: 0 0 0.5em 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: var(--magenta);
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 400;
+}
+
+small {
+  line-height: 1.3em;
+  font-size: 0.6em;
+}
+
+.large {
+  font-size: 1.3em;
+}
+
+.centered {
+  text-align: center;;
+}
+
+.crossed {
+  text-decoration: line-through;
+  text-decoration-color: var(--magenta);
+  opacity: 0.8;
+}
+
+.highlight {
+  color: var(--magenta);
+
+  .hljs-variable,
+  .hljs-function,
+  .hljs-keyword,
+  .hljs-comment,
+  .hljs-params {
+    color: var(--magenta);
+  }
+}

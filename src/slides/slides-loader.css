@@ -1,0 +1,42 @@
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slides-loader {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+
+  .active ~ & {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease 1s, visibility 0s ease 1.3s;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5vw 0 0 -5vw;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    border: 0.4rem solid var(--magenta);
+    border-top-color: rgba(255, 255, 255, 0.2);
+    animation: loaderSpin 1.5s linear infinite;
+  }
+}

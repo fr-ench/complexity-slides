@@ -1,0 +1,37 @@
+
+.content-roles__figure {
+  grid-template-columns: 2fr 3fr;
+}
+
+.content-roles__figure-wolves {
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+}
+
+.content-roles__wolves {
+  grid-gap: 5px;
+  grid-template-columns: 3fr 5fr 4fr;
+}
+
+.content-roles__wolves-title {
+  margin: 0;
+}
+
+.content-roles__grandma {
+  transform: scaleX(-1);
+}
+
+.content-roles__title {
+  transform: translate(0, -5%) rotate(-5deg);
+  line-height: 1.2em;
+  padding: 15px 10px 0 0;
+}
+
+.content-roles img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 65px;
+  width: auto;
+  height: auto;
+}

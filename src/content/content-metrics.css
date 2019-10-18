@@ -1,0 +1,41 @@
+.content-metrics__graph {
+  margin-top: -10px;
+}
+
+.content-metrics__graph-subtitle {
+  font-size: 2.2rem;
+  line-height: 1.4em;
+  font-weight: 400;
+  max-width: 200px;
+  justify-self: start;
+}
+
+.content-metrics__formula {
+  line-height: 1.4em;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+}
+
+.content-metrics__formula-list {
+  font-size: 2.3rem;
+  line-height: 1.4em;
+  margin-top: -10px;
+}
+
+.content-metrics__formula-list li {
+  margin-bottom: 10px;
+}
+
+.content-metrics__table {
+  width: 100%;
+}
+
+.content-metrics__formula-table {
+  line-height: 1.8em;
+}
+
+.content-metrics__formula-table td {
+  padding: 10px 20px;
+}

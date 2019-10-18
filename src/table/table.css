@@ -1,0 +1,15 @@
+table {
+  margin: 0 auto;
+  font-weight: normal;
+  line-height: 1.1em;
+  border-collapse: collapse;
+  border: 1px dashed var(--magenta);
+  text-align: left;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 1.2em;
+}
+
+th, td {
+  padding:10px 10px;
+  border: 1px dashed var(--magenta);
+}

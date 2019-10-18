@@ -1,0 +1,7 @@
+.columns {
+  columns: var(--columns, 1);
+
+  &--2 {
+    --columns: 2;
+  }
+}

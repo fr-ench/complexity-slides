@@ -1,0 +1,163 @@
+.content-final__graph {
+  position: relative;
+  max-width: 650px;
+  margin: 0 20px 20px;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 61%;
+  }
+}
+.content-final__graph-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content-final__graph-x,
+.content-final__graph-y {
+  position: absolute;
+  font-size: 1.4rem;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  color: var(--black);
+  font-weight: 400;
+}
+.content-final__graph-y {
+  bottom: 50%;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+}
+.content-final__graph-x {
+  bottom: 0;
+  left: 50%;
+  transform: translate(0, 100%);
+}
+.content-final__graph-tactical,
+.content-final__graph-strategic {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.content-final__graph-tactical {
+  color: var(--blue);
+  bottom: 40%;
+  left: 50%;
+}
+.content-final__graph-strategic {
+  color: var(--magenta);
+  bottom: 75%;
+  left: 68%;
+}
+
+.content-final__pyramid {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 80%;
+  }
+}
+.content-final__pyramid-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content-final__pyramid-text {
+  position: absolute;
+  font-size: 1.0rem;
+  line-height: 1.2em;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--magenta);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  hyphens: auto;
+
+  background-image: linear-gradient(to bottom, var(--magenta) 60%, var(--blue));
+  background-attachment: fixed;
+  background-clip: text;
+  color: transparent;
+
+  &--understandable {
+    top: 91.66%;
+    font-size: 1.5rem;
+  }
+  &--debuggable {
+    top: 75%;
+    font-size: 1.4rem;
+  }
+  &--testable {
+    top: 58.33%;
+    font-size: 1.35rem;
+  }
+  &--extensible {
+    top: 41.66%;
+    font-size: 1.25rem;
+  }
+  &--maintainable {
+    top: 25%;
+    max-width: 17%;
+    word-break: break-all;
+  }
+}
+
+@keyframes pie-delivery {
+  0% {
+    opacity: 1;
+    left: 12.495%;
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -100%);
+  }
+  95% {
+    opacity: 1;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  96% {
+    opacity: 0;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    left: 12.495%;
+    transform: translate(0, 0);
+  }
+}
+
+.content-final__delivery {
+  position: relative;
+  height: 30vh;
+  max-height: 350px;
+}
+.content-final__delivery-pie {
+  animation: pie-delivery 4s ease infinite;
+  justify-self: center;
+  max-width: 100px;
+  left: 8.33%;
+  position: absolute;
+}
+.content-final__delivery-girl {
+  max-height: 100%;
+  width: auto;
+}
+.content-final__delivery-grandma {
+  max-height: 100%;
+  width: auto;
+  justify-self: end;
+}

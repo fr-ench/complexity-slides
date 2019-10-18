@@ -1,0 +1,176 @@
+@keyframes wolfWalking {
+  0% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes pieEaten {
+  0% {
+    transform: rotate(75deg);
+  }
+  60% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
+}
+
+@keyframes pieJump {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: translate(0, -0.1vw) rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.content-mental__title {
+    padding-bottom: 10%;
+}
+
+.content-mental__risk {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.content-mental__risk-wolf {
+  width: 28vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: wolfWalking 3s infinite;
+  transform: translate(0, 0);
+}
+
+.content-mental__risk-pie {
+  width: 3vw;
+  position: absolute;
+  right: 20vw;
+  bottom: 4vw;
+  animation: pieEaten 3s infinite;
+  transform: rotate(75deg);
+}
+
+.content-mental__risk-cheburek {
+  width: 2.3vw;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.6);
+  right: 13vw;
+  bottom: 2.6vw;
+  animation: pieJump 3s infinite;
+}
+
+.content-mental__risk-hinkal {
+  width: 2.2vw;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.6);
+  right: 10vw;
+  bottom: 2.6vw;
+  animation: pieJump 3s infinite;
+}
+
+.content-mental__parts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-mental__parts-wolf {
+  width: 13vw;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+.content-mental__parts-grandma {
+  width: 4.5vw;
+  margin-right: -3px;
+  margin-top: -5px;
+  transform: scaleX(-1);
+}
+
+.content-mental__parts-pie,
+.content-mental__parts-cheburek,
+.content-mental__parts-hinkal {
+  width: 2.3vw;
+  margin-bottom: -10px;
+}
+.content-mental__parts-guy {
+  height: 10vh;
+}
+
+.content-mental__dynamic {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  height: 40%;
+  grid-gap: 0;
+}
+
+.content-mental__dynamic-img {
+  max-width: 2.8vw;
+  height: auto;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.6);
+}
+
+.content-mental__uncertainty {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content-mental__uncertainty-pie,
+.content-mental__uncertainty-hinkal,
+.content-mental__uncertainty-carrot,
+.content-mental__uncertainty-cheburek {
+  position: absolute;
+  width: 4.2vw;
+}
+
+.content-mental__uncertainty-pie {
+  left: 4%;
+  top: 60%;
+  transform: translate(0, -50%);
+}
+
+.content-mental__uncertainty-hinkal {
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0%);
+}
+
+.content-mental__uncertainty-carrot {
+  width: 5.4vw;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0%);
+}
+
+.content-mental__uncertainty-cheburek {
+  right: 4%;
+  top: 60%;
+  transform: translate(0, -50%);
+}

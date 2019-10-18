@@ -1,0 +1,24 @@
+blockquote, .blockquote {
+  font-weight: 400;
+  font-size: 1.5em;
+
+  &:before {
+    content: '\00ab';
+    color: var(--magenta);
+  }
+  &:after {
+    content: '\00bb';
+    color: var(--magenta);
+  }
+}
+
+.blockquote--centered {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.blockquote--xs {
+  font-size: 1.1em;
+}

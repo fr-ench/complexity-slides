@@ -1,0 +1,31 @@
+.content-code__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  display: inline-block;
+  width: 70px;
+  padding: 5px 0;
+  margin: -5px 0;
+  overflow: hidden;
+
+  &--small {
+    width: 35px;
+  }
+
+  .hljs-string,
+  .hljs-comment,
+  .hljs-symbol {
+    color: transparent;
+  }
+}
+
+.content-code__icon--hinkal {
+  background-image: url("../assets/chinkal.png");
+}
+.content-code__icon--cheburek {
+  background-image: url("../assets/cheburek.png");
+}
+.content-code__icon--pie {
+  background-image: url("../assets/pie.png");
+}
