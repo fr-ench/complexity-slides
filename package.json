@@ -1,0 +1,51 @@
+{
+  "name": "wsd-2019-complexity-slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "complexity-report": "./node_modules/.bin/es6-plato -r -d ./report src",
+    "escomplex": "node ./src/examples/escomplex.js ./src/examples/cyclomatic-complexity.js escomplex",
+    "typhonjs": "node ./src/examples/escomplex.js ./src/examples/cyclomatic-complexity.js typhonjs",
+    "build": "webpack",
+    "build --prod": "NODE_ENV = production && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fr_ench/complexity-slides.git"
+  },
+  "author": "fr_ench",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fr_ench/complexity-slides#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "es6-plato": "^1.2.3",
+    "escomplex": "^2.0.0-alpha",
+    "eslint": "^6.5.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-react": "^7.15.0",
+    "file-loader": "^4.2.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "style-loader": "^1.0.0",
+    "typhonjs-escomplex": "^0.1.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "highlight.js": "^9.15.10",
+    "rxjs": "^6.5.3"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
