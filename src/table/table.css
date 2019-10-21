@@ -6,7 +6,7 @@ table {
   border: 1px dashed var(--magenta);
   text-align: left;
   background: rgba(255, 255, 255, 0.4);
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
 th, td {

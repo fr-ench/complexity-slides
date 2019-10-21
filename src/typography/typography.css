@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto Slab', serif;
   color: var(--blue);
   line-height: 1.8em;
-  font-size: 1.6em;
+  font-size: 1.55em;
   font-weight: 300;
 }
 
@@ -30,7 +30,7 @@ h3, .title--l {
 }
 
 h4, .title--m {
-  font-size: 2.0rem;
+  font-size: 1.95rem;
   margin: 0 0 0.75em 0;
   font-weight: 400;
 }

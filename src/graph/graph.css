@@ -1,9 +1,9 @@
 .graph {
-  --size: 1.65rem;
+  --size: 1.4rem;
   --spread: 1;
   --horspread: 1;
   --rowstart: initial;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   grid-template-rows: repeat(calc(var(--rows, 1)), var(--size));
   grid-template-columns: repeat(calc(var(--columns, 1)), var(--size));

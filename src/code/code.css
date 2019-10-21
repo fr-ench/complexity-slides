@@ -4,8 +4,8 @@ pre, .code {
   color: var(--black);
   padding: 0.5em 1em;
   counter-reset: code;
-  font-size: 1.15rem;
-  line-height: 1.1em;
+  font-size: 1.1rem;
+  line-height: 1.08em;
   padding-top: 1em;
   white-space: initial;
   font-family: monospace;
@@ -35,7 +35,7 @@ pre, .code {
 }
 
 .code--l {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 code {
