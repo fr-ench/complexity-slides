@@ -44,7 +44,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "rxjs": "^6.5.3"
   },
   "browserslist": "> 0.25%, not dead"
